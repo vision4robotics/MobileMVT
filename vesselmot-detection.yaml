@@ -1,0 +1,17 @@
+# VesselMOT detection dataset config for training the TConvNet detector.
+# Ultralytics YOLO format. Edit `path` to point to your local VesselMOT
+# detection split (images + YOLO-format labels).
+#
+# Expected layout:
+#   <path>/
+#   ├── images/{train,val,test}/*.jpg
+#   └── labels/{train,val,test}/*.txt   # YOLO format: <cls> <cx> <cy> <w> <h>
+
+path: /path/to/vesselmot_detection      # dataset root dir
+train: images/train                     # train images (relative to 'path')
+val: images/val                         # val images
+test: images/test                       # test images (optional)
+
+# Classes
+names:
+  0: vessel
