@@ -10,9 +10,9 @@
 
 [![IROS](https://img.shields.io/badge/IROS-2026-blue)](https://2026.ieee-iros.org/)
 [![MobileMVT](https://img.shields.io/badge/MobileMVT-green)](https://github.com/vision4robotics/MobileMVT)
-[![VesselMOT](https://img.shields.io/badge/VesselMOT-red)](https://pan.baidu.com/s/1d9XinUwxi1fNIoVyoI94aA?pwd=vfax)
+[![VesselMOT](https://img.shields.io/badge/VesselMOT-red)](https://pan.baidu.com/s/1eib2AQmtd8W7TESwsR9zJg?pwd=ph1x)
 ## Abstract
-Visual multi-vessel tracking is critical for intelligent maritime surveillance yet challenging due to the complexity of efficiently modeling rigid vessel structures across diverse scales and viewpoints. Existing methods struggle to reconcile fine-grained geometric modeling with the real-time constraints of resource-constrained UAV edge platforms, where performance is further hindered by scale variations and viewpoint perturbations. To address these challenges, a novel visual multi-vessel tracking framework (MobileMVT) is proposed for real-time deployment on UAV-mounted edge electro-optical devices. At its core, the Trapezoid Convolution (TConv) encodes vessel-specific geometric priors through trapezoid-aligned sampling, enhancing shape preservation and feature discrimination. Building upon it, TConvNet serves as a compact backbone to improve recognition accuracy and tracking consistency with minimal computational cost. Furthermore, an uncertainty-aware viewpoint compensator is integrated to mitigate UAV-induced shifts and motion uncertainties, ensuring stable trajectory estimation. To facilitate comprehensive evaluation, we introduce VesselMOT, a large-scale benchmark comprising 150 sequences and over 180k annotated frames featuring diverse scenarios. Extensive experiments and real-world tests demonstrate that MobileMVT achieves superior tracking accuracy and real-time performance in dynamic maritime environments.
+Visual multi-vessel tracking is critical for intelligent maritime surveillance yet challenging due to the complexity of efficiently modeling rigid vessel structures across diverse scales and viewpoints. Existing methods struggle to reconcile fine-grained geometric modeling with the real-time constraints of resource-constrained UAV edge platforms, where performance is further hindered by scale variations and viewpoint perturbations. To address these challenges, a novel visual multi-vessel tracking framework (MobileMVT) is proposed for real-time deployment on UAV-mounted edge electro-optical devices. At its core, the Trapezoid Convolution (TConv) encodes vessel-specific geometric priors through trapezoid-aligned sampling, enhancing shape preservation and feature discrimination. Building upon it, TConvNet serves as a compact backbone to improve recognition accuracy and tracking consistency with minimal computational cost. Furthermore, an uncertainty-aware viewpoint compensator is integrated to mitigate UAV-induced shifts and motion uncertainties, ensuring stable trajectory estimation. To facilitate comprehensive evaluation, we introduce VesselMOT, a large-scale benchmark comprising 155 sequences and over 170k annotated frames featuring diverse scenarios. Extensive experiments and real-world tests demonstrate that MobileMVT achieves superior tracking accuracy and real-time performance in dynamic maritime environments.
 
 ---
 
@@ -22,7 +22,7 @@ Visual multi-vessel tracking is critical for intelligent maritime surveillance y
 - **TConvNet** — a compact detection backbone integrating TConv into a hierarchical feature pyramid for fine-grained, scale-aware vessel perception.
 - **UAVC tracker** — adaptively rectifies UAV-induced perturbations, ensuring stable trajectory estimation in unstructured environments.
 - **Edge-ready** — runs at 43.75 FPS on the Hi3403V100 edge AI chip with 3.75 M params and 5.11 G MACs.
-- **Large-scale VMVT benchmark (VesselMOT)** — a challenging benchmark comprising 150 sequences and over 180k annotated frames. Serving as the largest UAV-captured multi-vessel tracking benchmark, it covers diverse waterways and environmental conditions, providing a comprehensive testbed for practical maritime monitoring.
+- **Large-scale VMVT benchmark (VesselMOT)** — a challenging benchmark comprising 155 sequences and over 170k annotated frames. Serving as the largest UAV-captured multi-vessel tracking benchmark, it covers diverse waterways and environmental conditions, providing a comprehensive testbed for practical maritime monitoring.
 
 ## 🏗️ Repository Structure
 
@@ -64,9 +64,7 @@ pip install -r requirements.txt
 
 ### VesselMOT Dataset
 
-**Download (Baidu Netdisk):** https://pan.baidu.com/s/1d9XinUwxi1fNIoVyoI94aA?pwd=vfax
-
-The default VesselMOT benchmark follows the standard MOT data formats.
+**Download (Baidu Netdisk):** https://pan.baidu.com/s/1eib2AQmtd8W7TESwsR9zJg?pwd=ph1x
 
 **Expected directory structure:**
 ```text
